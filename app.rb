@@ -18,9 +18,15 @@ class App < Sinatra::Base
   get '/say/:number/:phrase' do
     num = params[:number].to_i
     phrase = params[:phrase]
+<<<<<<< HEAD
     repeat = ""
     num.times do
       repeat = repeat + " #{phrase}"
+=======
+
+    num.times do
+      "#{phrase}"
+>>>>>>> 434dd3d141a748b0ba5fabe6cca7d81f765a56e7
     end
     repeat
   end
